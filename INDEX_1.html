@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ln="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Devslops</title>
+     </head>
+<body>
+    <nav>
+        <ul class="topnav" id="DropDownClick">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Conact">Contacts</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#About">About</a></li>
+            <li class= "topnav-right"><a href="#SignIn">SignIn</a></li>
+            <li class= "topnav-right"><a href="#SignUp">SignUp</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        
+        </ul>
+    </nav>
+    <div class="container" id="section-1-gradient">
+        <div class ="row">
+            <div class="col-6">
+                <div class="left-side-col">
+                    <h3 class="large">Crazy Developers</h3>
+                    <h3 class="large">Wanna Register!!</h3>
+                </div>
+                <form>
+                    <div class="left-side-col" >
+                    <h4>Username</h4>
+                    <input class="inputbox" type="text" name="username" placeholder="Username">
+                    <h4>Password</h4>
+                    <input class="inputbox" type="password" name="password" placeholder="Password">
+                    </div >
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="right-side-col">
+                    <div class="vedio-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rYeSA1vgIUE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <script>
+        function dropdownMenu(){
+            var x= document.getElementById("DropDownClick");
+            if(x.className ==="topnav")
+                {
+                x.className += " responsive";
+        }
+        else{
+            x.className = "topnav";}
+        
+        }
+    </script>
+    
+    </body>
+</html>
